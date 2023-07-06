@@ -5,7 +5,7 @@ resource "aws_security_group" "ssh" {
 
 
 resource "aws_security_group_rule" "ssh-inbound-rule" {
-security_group_id = "sg-01c9da29549a079f8"
+security_group_id = aws_security_group.ssh.id
   type              = "ingress"
   from_port         = 0
   to_port           = 0
