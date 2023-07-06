@@ -1,1 +1,3 @@
 chave-instancia.pem
+terraform*
+.terraform*
